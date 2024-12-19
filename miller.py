@@ -34,5 +34,11 @@ def plot_surface(R_s,Z_s,savefig=True):
     if savefig:
         plt.savefig("miller.png")
 
-plot_surface(flux_surfaces[0],flux_surfaces[1])
+
+def main():
+    R_s,Z_s=flux_surface()
+    plot_surface(R_s,Z_s)
+
+if __name__ == "__main__":
+    main()
 
